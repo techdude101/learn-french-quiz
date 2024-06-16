@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" />
+  <script type="module" src="./bundle.js"></script>
+  <title>Learn French Quiz</title>
+</head>
+<body>
+  <header>
+  <h1>Learn French Quiz</h1>
+</header>
+  <form id="question-form">
+    <div class="form-group">
+    <label id="question-label" for="answer-input">What is 1999 in French?</label>
+    <input id="answer-input" name="answer-input" type="text" autocomplete="off" />
+    <div class="form-buttons">
+      <input id="submit-button" type="submit" value="Check Answer">
+      <input id="next-button" type="button" value="Next Question">
+  </div>
+  </div>
+  </form>
+  <div id="info-screen" class="info-screen">
+    <h2 id="info-correct-answer"></h2>
+  </div>
+  <div id="results-screen" class="results-screen">
+    <h2 id="results-score">You scored: 1/5</h2>
+  </div>
+</body>
+</html>
