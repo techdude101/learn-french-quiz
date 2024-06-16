@@ -23,7 +23,7 @@ questionFormElement.addEventListener("submit", (e) => {
   e.preventDefault();
   
   const answer = answerInputElement.value;
-  const result = quiz.checkAnswer(quiz.randomNumber, answer);
+  const result = quiz.checkAnswer(quiz.randomNumber, answer.toLowerCase());
   
   if (result) {
     quiz.score += 1;
